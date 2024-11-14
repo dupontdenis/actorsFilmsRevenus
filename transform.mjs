@@ -10,6 +10,7 @@ const transformation = films.reduce((acc, film) => {
         }
         actorEntry.films.push(film.title);
         actorEntry.revenue += actorSalaries.get(actor) || 0;
+        console.log(actorEntry.revenue);
     });
     return acc;
 }, []);
