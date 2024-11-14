@@ -6,7 +6,6 @@ const transformation = films.reduce((acc, film) => {
         let actorEntry = acc.find(entry => entry.actor === actor);
         if (!actorEntry) {
             actorEntry = { actor, films: [], revenue: 0 };
-
             acc.push(actorEntry);
         }
         actorEntry.films.push(film.title);
